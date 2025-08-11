@@ -6,13 +6,27 @@ const Navbar = () => {
     const nav = 
     <>
     
-    <NavLink> </NavLink>
+
+     <div className='grid grid-cols-3'>
+      <li><a>Item 1</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul className=" p-2 ">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>Item 3</a></li>
+     </div>
+     
     </>
     return (
-        <div>
+        <div className=' '>
 
 
-            <div className="navbar bg-base-100">
+            <div className="navbar text-white  fixed z-10 bg-opacity-50 bg-green-800">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,12 +43,18 @@ const Navbar = () => {
             d="M4 6h16M4 12h8m-8 6h16" />
         </svg>
       </div>
-       {nav}
+       <ul tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+         {nav}
+       </ul>
     </div>
     <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-     {nav}
+      <ul tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+         {nav}
+       </ul>
   </div>
   <div className="navbar-end">
     <a className="btn">Button</a>
