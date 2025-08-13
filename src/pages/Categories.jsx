@@ -21,11 +21,20 @@ import image7 from "../assets/chips.jpg"
 import image8 from "../assets/cleaning.jpg"
 import image9 from "../assets/beverege.jpg"
 import image10 from "../assets/bakery.jpg"
+import Sectiontitle from './Sectiontitle';
+
+
 
 
 const Categories = () => {
     return (
         <div className='py-4'>
+
+          <Sectiontitle
+          heading={"--From 11:00am to 10:00pm--"}
+          subheading={"ORDER NOW"}>
+
+          </Sectiontitle>
  
 
             <Swiper

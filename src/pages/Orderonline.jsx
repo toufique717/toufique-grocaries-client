@@ -11,7 +11,7 @@ const Orderonline = () => {
                 <p className="border-t border-b border-white py-2 text-xl font-bold "> ORDER NOW </p>
              </div>
             
-        </div>
+               </div>
             
         </div>
     );
