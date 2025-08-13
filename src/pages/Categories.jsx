@@ -36,10 +36,10 @@ const Categories = () => {
 
           </Sectiontitle>
  
-
             <Swiper
         slidesPerView={1}
         spaceBetween={10}
+  
         pagination={{
           clickable: true,
         }}
