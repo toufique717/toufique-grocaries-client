@@ -4,6 +4,7 @@ import Orderonline from './Orderonline';
 import Categories from './Categories';
 import Popularitem from './Popularitem';
 import Bgorderonline from './Bgorderonline';
+import Tsestimonial from './Tsestimonial';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
 
             <Popularitem></Popularitem>
             <Bgorderonline></Bgorderonline>
+            <Tsestimonial></Tsestimonial>
         </div>
     );
 };
