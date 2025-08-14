@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Sectiontitle from './Sectiontitle';
+
 import Popular from '../shared/Popular';
 
 const Popularitem = () => {
