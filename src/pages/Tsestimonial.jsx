@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
  
+
 import { FaQuoteLeft } from "react-icons/fa";
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';

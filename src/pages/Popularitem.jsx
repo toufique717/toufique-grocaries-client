@@ -21,8 +21,7 @@ const Popularitem = () => {
         },[])
     return (
         <div>
-            <h1>Popular item</h1>
-
+            
             <section>
                 <Sectiontitle
                 heading={"---ORDER NOW---"}
