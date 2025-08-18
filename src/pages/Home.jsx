@@ -7,10 +7,15 @@ import Bgorderonline from './Bgorderonline';
 import Tsestimonial from './Tsestimonial';
 import Bistrobackimage from './Bistrobackimage';
 import Callus from './Callus';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div>
+
+            <Helmet>
+                <title> Home Toufique Groceries Home</title>
+            </Helmet>
             
             <Banner> </Banner>
             {/* <Orderonline></Orderonline> */}
