@@ -10,7 +10,7 @@ const Navbar = () => {
 
      <div className='grid grid-cols-3'>
       <li><Link to='/'>Home</Link></li>
-       <li><Link to='/menu'>Menu</Link></li>
+       <li><Link to='/menu'>Products</Link></li>
        
       
      </div>
