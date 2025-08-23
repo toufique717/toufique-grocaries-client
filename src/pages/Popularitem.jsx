@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import Sectiontitle from './Sectiontitle';
 
 import Popular from '../shared/Popular';
@@ -7,7 +8,7 @@ import usemenu from '../hooks/usemenu';
 const Popularitem = () => {
 
     const [menu] = usemenu();
-    const popular = menu.filter(item=>item.categories === 'popular') 
+    const popular = menu.filter(item=>item.category === 'popular') 
 
     // const[menu, setmenu] = useState([]);
 
@@ -23,7 +24,7 @@ const Popularitem = () => {
     //         }
     //         )
     //     },[])
-    return (
+     return (
         <div>
             
             <section>
