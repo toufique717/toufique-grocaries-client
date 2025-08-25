@@ -8,6 +8,7 @@ const Coverimage = ({ image, title1, title2 }) => {
         blur={{ min: -15, max: 15 }}
         bgImage={image}
         bgImageAlt="the dog"
+        
         strength={-200}
     >
          <div
