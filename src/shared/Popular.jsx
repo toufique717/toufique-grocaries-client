@@ -3,7 +3,8 @@ import React from 'react';
 const Popular = ({item}) => {
     const{name,image,recipe,price} =item;
     return (
-        <div>
+        
+      
 
            <div className='flex gap-2 p-4'>
               <div>
@@ -16,11 +17,23 @@ const Popular = ({item}) => {
               <div>
                 <p className='text-yellow-600'>${price}</p>
               </div>
-        </div>
+
+               
+             </div>
+
+         
 
             
-        </div>
+       
+
+
+         
+
+         
+        
     );
 };
 
 export default Popular;
+
+ 

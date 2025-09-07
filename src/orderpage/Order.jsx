@@ -5,11 +5,17 @@ import orderimage from '../assets/bakery.jpg'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+
 import Ordercard from '../shared/Ordercard';
 import usemenu from '../hooks/usemenu';
+import Orderloading from './Orderloading';
+import { useParams } from 'react-router-dom';
 
 const Order = () => {
     const[menu] = usemenu();
+
+    const {category} =useParams();
+    console.log(category);
 
       const offered = menu.filter(item=>item.category === 'offered');
      const vegetables = menu.filter(item=>item.category === 'salad');
@@ -38,17 +44,39 @@ const Order = () => {
         <Tab>Cleaning</Tab>
         
       </TabList>
-      <TabPanel></TabPanel>
-      <TabPanel></TabPanel>
-      <TabPanel></TabPanel>
-      <TabPanel></TabPanel>
-      <TabPanel></TabPanel>
+      <TabPanel>
+         <Orderloading item={offered}>
+
+         </Orderloading>
+      </TabPanel>
+      <TabPanel>
+        <Orderloading item={vegetables}>
+
+         </Orderloading>
+      </TabPanel>
+      <TabPanel>
+
+        <Orderloading item={fruits}>
+
+         </Orderloading>
+      </TabPanel>
+      <TabPanel>
+
+        <Orderloading item={snacks}>
+
+         </Orderloading>
+      </TabPanel>
+      <TabPanel>
+        <Orderloading item={cosmetic}>
+
+         </Orderloading>
+      </TabPanel>
       
     </Tabs>
 
             </div>
 
-            <Ordercard></Ordercard>
+            {/* <Ordercard></Ordercard> */}
             
         </div>
     );
